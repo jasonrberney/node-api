@@ -1,0 +1,4 @@
+#exclude node modules
+node_modules
+dist/
+.env
