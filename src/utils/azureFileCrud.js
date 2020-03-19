@@ -31,11 +31,11 @@ function azureFileCrud(containerName, location) {
 
         upload: async (file) => {
             try {
-                let scheduleMetadata = {
+                let metadata = {
                     date: new Date().toUTCString(),
                     location: location
                 };
-                const res = await uploadStream(file, containerName, scheduleMetadata);
+                const res = await uploadStream(file, containerName, metadata);
                 return { success: res.success };
             } catch (err) {
                 console.log(err.message);
