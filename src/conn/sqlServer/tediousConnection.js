@@ -20,5 +20,5 @@ tediousConnect = async () => {
   const connection = new Connection(config);
   return connection;
 }
-
+// TEST
 module.exports = { tediousConnect };
